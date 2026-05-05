@@ -14,13 +14,19 @@
 }
 
 body {
-    font-family: 'Segoe UI', Roboto,  Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
     line-height: 1.6;
-    color: var(--color-texto);
+    color: var(--color-fondo-suave);
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    background-color: var(--color-secundario);
+    background-image: url(/assets/img/sobremi.avif);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-color: #f8fafc;
 }
 
 .yo {
@@ -112,6 +118,24 @@ main {
     transform: translateY(-4px);
 }
 
+.btnsobremi{
+    margin-bottom: 30px;
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 30px;
+    background: var(--color-acento);
+    color: var(--color-secundario);
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: var(--transicion);
+}
+
+.btnsobremi:hover {
+    background: #0056b3;
+    transform: translateY(-4px);
+}
+
 .info {
     padding: 50px 20px;
     max-width: 8000px;
@@ -132,4 +156,67 @@ footer {
     padding: 10px 20px;
     font-size: 0.9rem;
     letter-spacing: 1px;
+}
+
+.img1 {
+    width: 120px;         
+    margin: 0 15px;        
+    transition: transform 0.3s;
+}
+
+.img2 {
+    width: 106px;         
+    margin: 0 15px;        
+    transition: transform 0.3s;
+}
+
+.img1:hover {
+    transform: scale(1.1);  
+}
+
+.img2:hover {
+    transform: scale(1.1);  
+}
+
+p{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+h1{
+    padding: 40px;
+    margin-left: 50px;
+    font-size: 4rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.iconos-container {
+    margin-left: 80px;
+    display: flex;
+    justify-content: center; 
+    gap: 70px;              
+    text-align: center;
+}
+
+.infofooter {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.infofooter a {
+    text-decoration: none;
+    font-size: 20px;
+    color: var(--color-secundario);
+    transition: 0.3s;
+}
+
+.infofooter a:hover {
+    transform: scale(1.1);
+    color: var(--color-acento);
+}
+
+.infofooter i {
+    margin-right: 8px;
 }
